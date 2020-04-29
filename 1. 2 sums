@@ -1,0 +1,16 @@
+First time trying :
+  2 for loop to loop in num list
+  -> too time consuming when there're lots of numbers in list
+Second time trying :
+  -while loop
+  -target number -1 loop to find the closest number to target number in num list
+  -the difference of the closest number to the target number should be the second number,
+   closest number should be the first number. If not, continue the process
+  -> too time consuming when num = [50000, 1, 50000], target number = 100000
+Third time trying :
+  -calculate all the difference between numbers in list and the target number,
+   arrange the numbers according to descending order of difference
+  -find ( target number - n numbers ) in list
+   n starting from 1
+   -> if exist -> ends
+   -> if not -> use the n + 1 number closest to target number
