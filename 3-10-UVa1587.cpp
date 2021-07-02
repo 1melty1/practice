@@ -11,10 +11,9 @@ bool compareface(face face1, face face2){
 bool sortfacearr(face face1, face face2){
     if(face1.w != face2.w){
         return face1.w > face2.w;
-    }else
-    {
+    }else{
         return face1.l > face2.l;
-    } //ascending
+    }   //ascending
 }
 
 //void check(face a[]){
