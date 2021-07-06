@@ -61,6 +61,7 @@ int main(){
         }else{
             cout << "IMPOSSIBLE" << '\n';
         }
+        flag = true;
     }
 
     return 0;
