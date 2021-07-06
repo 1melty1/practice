@@ -43,9 +43,9 @@ int main(){
         sort(facearr, facearr + 6, sortfacearr); //from <algorithm>
         //check(facearr);
         if(compareface(facearr[0], facearr[1]) && compareface(facearr[2], facearr[3]) && compareface(facearr[4], facearr[5])){
-            if((facearr[0].l == facearr[2].l || facearr[0].l == facearr[4].l || facearr[0].w == facearr[2].w || facearr[0].w == facearr[4].w) && (facearr[2].l == facearr[0].l || facearr[2].l == facearr[4].l || facearr[2].w == facearr[0].w || facearr[2].w == facearr[4].w) && (facearr[4].l == facearr[0].l || facearr[4].l == facearr[2].l || facearr[4].w == facearr[0].w || facearr[4].w == facearr[2].w)) cout << "POSSIBLE"; //each face has a common side with another face
+            if((facearr[0].l == facearr[2].l || facearr[0].l == facearr[4].l || facearr[0].w == facearr[2].w || facearr[0].w == facearr[4].w) && (facearr[2].l == facearr[0].l || facearr[2].l == facearr[4].l || facearr[2].w == facearr[0].w || facearr[2].w == facearr[4].w) && (facearr[4].l == facearr[0].l || facearr[4].l == facearr[2].l || facearr[4].w == facearr[0].w || facearr[4].w == facearr[2].w)) cout << "POSSIBLE" << '\n'; //each face has a common side with another face
         }else{
-            cout << "IMPOSSIBLE";
+            cout << "IMPOSSIBLE" << '\n';
         }
     }
 
