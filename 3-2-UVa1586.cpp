@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
     string formula;
-    float paw, total;
+    double paw, total; //用 double 增加準確性
     int number, temp_number, multi;
     while(cin >> formula){
         paw = 0;
@@ -12,7 +12,7 @@ int main(){
         multi = 1;
         number = 1;
         temp_number = 0;
-        for (int i=formula.length()+1; i>=0; i--){
+        for (int i=formula.length()-1; i>=0; i--){
             if (not isdigit(formula[i]) ){
                 if(formula[i]=='C') paw = 12.01;
                 if(formula[i]=='H') paw = 1.008;
@@ -30,6 +30,6 @@ int main(){
                 multi = 10;
             }
         }
-    if(total != 0) printf("%.3f \n",total);
+    if(total != 0) printf("%.3f\n",total); //%.3f 和 \n 之間不能有空格。。。不然會多出空格
     }
 }
