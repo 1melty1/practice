@@ -12,7 +12,7 @@ int main(){
         multi = 1;
         number = 1;
         temp_number = 0;
-        for (int i=formula.length()-1; i>=0; i--){
+        for (int i=formula.length()-1; i>=0; i--){ //之前用了 formula.length()+1 造成了錯誤。。。
             if (not isdigit(formula[i]) ){
                 if(formula[i]=='C') paw = 12.01;
                 if(formula[i]=='H') paw = 1.008;
