@@ -1,1 +1,1 @@
-May not be the best solution but it works
+May not be the best solutions but they work
